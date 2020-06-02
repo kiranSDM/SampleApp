@@ -1,0 +1,27 @@
+
+{
+    "person":[
+        {
+            "firstName": "Akshay",
+            "lastName": "Somkuwar",
+            "birthday": "29/05/1991",
+            "age": "30",
+            "email": "akhshay@gmail.com",
+            "mobileNo": "9730957095",
+            "address": "At po waghoda, tah soner, dist nagpur",
+            "contactPerson": "Vijay",
+            "contactPersonPhoneNo": "9999999999"
+        },
+        {
+            "firstName": "Vijay",
+            "lastName": "Chavhan",
+            "birthday": "19/04/1990",
+            "age": "30",
+            "email": "vijay@gmail.com",
+            "mobileNo": "9999999999",
+            "address": "At po waghoda, tah soner, dist nagpur",
+            "contactPerson": "Akshay",
+            "contactPersonPhoneNo": "9730957095"
+        }
+    ]
+}    
