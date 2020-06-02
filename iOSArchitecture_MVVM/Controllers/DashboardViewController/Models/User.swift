@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public class User {
+public class User: Codable {
     public var firstName : String?
     public var lastName : String?
     public var age : String?

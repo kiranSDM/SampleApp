@@ -31,6 +31,11 @@
 		7A04E4812485341C00EC9F2B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04E4762485341C00EC9F2B /* BaseViewModel.swift */; };
 		7A04E4822485341C00EC9F2B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04E4782485341C00EC9F2B /* BaseViewController.swift */; };
 		7A3E214A24860E61006B07B8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E214924860E61006B07B8 /* String+Extension.swift */; };
+		7A3E214C24864C8A006B07B8 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E214B24864C8A006B07B8 /* UIColor+Hex.swift */; };
+		7A3E214E24864CAA006B07B8 /* ApiConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E214D24864CAA006B07B8 /* ApiConstant.swift */; };
+		7A3E215524864D16006B07B8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E215224864D16006B07B8 /* APIService.swift */; };
+		7A3E215624864D16006B07B8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E215324864D16006B07B8 /* Reachability.swift */; };
+		7A3E215724864D16006B07B8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E215424864D16006B07B8 /* UserService.swift */; };
 		9E1D6A872372A962007DE6A7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9E1D6A862372A962007DE6A7 /* .swiftlint.yml */; };
 		B522EEEC2485502400F272C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522EEEB2485502400F272C7 /* User.swift */; };
 		B5F103DC248632ED001FB832 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F103DB248632ED001FB832 /* CoreDataService.swift */; };
@@ -88,6 +93,11 @@
 		7A04E4762485341C00EC9F2B /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7A04E4782485341C00EC9F2B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7A3E214924860E61006B07B8 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		7A3E214B24864C8A006B07B8 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		7A3E214D24864CAA006B07B8 /* ApiConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstant.swift; sourceTree = "<group>"; };
+		7A3E215224864D16006B07B8 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7A3E215324864D16006B07B8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		7A3E215424864D16006B07B8 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9571CFD9A096E2607E416E53 /* Pods-iOSArchitecture_MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSArchitecture_MVVMTests.release.xcconfig"; path = "Target Support Files/Pods-iOSArchitecture_MVVMTests/Pods-iOSArchitecture_MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E1D6A862372A962007DE6A7 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		9E856D922383E2BD006181B4 /* DarkModeREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DarkModeREADME.md; sourceTree = "<group>"; };
@@ -175,9 +185,11 @@
 				9E1D6A862372A962007DE6A7 /* .swiftlint.yml */,
 				7075C4DA223A6A8D0029CE31 /* AppDelegate */,
 				7013DE6522537EF4005C12D1 /* Controllers */,
-				7075C4AA223A53200029CE31 /* Stores */,
 				7075C4BB223A533D0029CE31 /* Extensions */,
+				7A3E215024864CE8006B07B8 /* Libraries */,
+				7A3E215124864D02006B07B8 /* Networks */,
 				7075C4AD223A53200029CE31 /* Helpers */,
+				7075C4AA223A53200029CE31 /* Stores */,
 				7075C4E2223A6BFB0029CE31 /* Storyboard */,
 				7075C4A0223A50C00029CE31 /* Resources */,
 			);
@@ -227,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				7075C4AE223A53200029CE31 /* Constant.swift */,
+				7A3E214D24864CAA006B07B8 /* ApiConstant.swift */,
 				7A04E44B2484FE6C00EC9F2B /* Data.json */,
 			);
 			path = Helpers;
@@ -238,6 +251,7 @@
 				7A3E214924860E61006B07B8 /* String+Extension.swift */,
 				7075C4C7223A55140029CE31 /* CommonExtensions.swift */,
 				7075C4C5223A54220029CE31 /* UIAlertController.swift */,
+				7A3E214B24864C8A006B07B8 /* UIColor+Hex.swift */,
 				7075C4BE223A533D0029CE31 /* UIApplication.swift */,
 				7075C4BF223A533D0029CE31 /* Bundle.swift */,
 			);
@@ -335,6 +349,23 @@
 				7A04E4782485341C00EC9F2B /* BaseViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7A3E215024864CE8006B07B8 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		7A3E215124864D02006B07B8 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E215224864D16006B07B8 /* APIService.swift */,
+				7A3E215324864D16006B07B8 /* Reachability.swift */,
+				7A3E215424864D16006B07B8 /* UserService.swift */,
+			);
+			path = Networks;
 			sourceTree = "<group>";
 		};
 		98530A5E15742F9F54ECC015 /* Frameworks */ = {
@@ -593,8 +624,11 @@
 				B5F103DC248632ED001FB832 /* CoreDataService.swift in Sources */,
 				7A3E214A24860E61006B07B8 /* String+Extension.swift in Sources */,
 				7A04E45A2485296C00EC9F2B /* DashboardViewModel.swift in Sources */,
+				7A3E214C24864C8A006B07B8 /* UIColor+Hex.swift in Sources */,
 				7A04E46024852CDF00EC9F2B /* DashboardDetailViewController.swift in Sources */,
 				7A04E4822485341C00EC9F2B /* BaseViewController.swift in Sources */,
+				7A3E215724864D16006B07B8 /* UserService.swift in Sources */,
+				7A3E215524864D16006B07B8 /* APIService.swift in Sources */,
 				7075C4C4223A533D0029CE31 /* Bundle.swift in Sources */,
 				7A04E45424850F9300EC9F2B /* DashboardViewController.swift in Sources */,
 				B522EEEC2485502400F272C7 /* User.swift in Sources */,
@@ -602,9 +636,11 @@
 				7075C4AF223A53200029CE31 /* AppInstance.swift in Sources */,
 				7075C4B1223A53200029CE31 /* Constant.swift in Sources */,
 				7075C4C6223A54220029CE31 /* UIAlertController.swift in Sources */,
+				7A3E215624864D16006B07B8 /* Reachability.swift in Sources */,
 				7075C478223A4ED00029CE31 /* iOSArchitecture_MVVM.xcdatamodeld in Sources */,
 				7075C4C8223A55150029CE31 /* CommonExtensions.swift in Sources */,
 				7A04E458248526D900EC9F2B /* PersonNameTableViewCell.swift in Sources */,
+				7A3E214E24864CAA006B07B8 /* ApiConstant.swift in Sources */,
 				7A04E4812485341C00EC9F2B /* BaseViewModel.swift in Sources */,
 				7075C470223A4ED00029CE31 /* AppDelegate.swift in Sources */,
 			);
