@@ -16,13 +16,12 @@ Architecture is following MVVM pattern using Swift Language with version 4.2 and
 ### Controllers:
 #####  That contains all the controllers that manages context between ModalView & View. To kick start controllers contained in folder
             - BaseViewControler -> Base of every controller inherited from UIViewController. It is required so that if any change is required in all the screens of application then code for that can be written in base so impelementation can be done around the app.
-            - LoginViewController -> Login View that is defined first and is the landing page when application opens. It is inherited from BaseViewController.
-            - HomeViewController -> After Login where user lands is Home and it is also inherited from BaseViewController.
+            - DashboardViewController -> Person listing is displayed either fetched from JSON file (which we considered as a remote source) or from cache (core Data) if exist
+            - DashboardDetailViewController -> In this controller we are showing Details of the person
 
 ### Models :
 #####   All the modals and information in modal form can be saved in modal classes will be defined here. Currently contains:
             - User -> This is example of modal that is created after user login to modal the user information.
-            - Listing -> This is example of modal that is created to display listing in HomeViewController.
 
 ### Views : 
 #####  All the custom views that are required in app shall come under this. It doesnot contain any file but contributes to the architecture.
